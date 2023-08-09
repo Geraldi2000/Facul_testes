@@ -23,17 +23,33 @@ while True:
     print(jogador, computador)
 
     if jogador == "Pedra" and computador == "Tesoura":
+        vjogador +=1
         print("Jogador Wins")
     elif jogador == "Papel" and computador == "Pedra":
+        vjogador +=1
         print("Jogador Wins")
     elif jogador == "Tesoura" and computador == "Papel":
+        vjogador +=1
         print("Jogador Wins")
     elif jogador == computador:
+        empates +=1
         print("EMPATE")
     else:
+        vcomputador +=1
         print("Computador Wins")
     
-    break
+    print("Placar: ")
+    print(f"Jogador: {vjogador} ")
+    print(f"Computador: {vcomputador}")
+    print(f"Empates: {empates} ")
+    respostas = input("Deseja continuar s/n? ")
+    if respostas=="n":
+        break
+    
+    
+    
+    
+
 
 
 
