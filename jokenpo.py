@@ -45,6 +45,8 @@ while True:
     respostas = input("Deseja continuar s/n? ")
     if respostas=="n":
         break
+    else:
+        continue
     
     
     
